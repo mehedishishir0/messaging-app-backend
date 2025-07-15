@@ -21,7 +21,7 @@ exports.registerUser = async (req, res) => {
     const hashedPassword = await bcrypt.hash(password, 10);
     const boyProfilePicture = `https://avatar.iran.liara.run/public/boy?username=${username}`;
     const girlProfilePicture =
-      "https://avatar.iran.liara.run/public/girl?username=${username}`";
+    `https://avatar.iran.liara.run/public/girl?username=${username}`;
     const user = await User.create({
       fullName,
       username,
